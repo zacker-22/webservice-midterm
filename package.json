@@ -1,0 +1,26 @@
+{
+  "name": "webserivce-midterm",
+  "version": "1.0.0",
+  "description": "Midterm Project for Webservices Class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacker-22/webservice-midterm.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Yash Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zacker-22/webservice-midterm/issues"
+  },
+  "homepage": "https://github.com/zacker-22/webservice-midterm#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
