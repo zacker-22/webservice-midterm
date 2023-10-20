@@ -1,19 +1,17 @@
 import express from 'express';
-import trackship from './routes/flights.js';
+import aviationstack from './routes/flights.js';
 
 const app = express();
 const port = 8080;
 
-
-
-app.use('/flights', trackship);
 app.use(express.json());
 
+app.use('/flights', aviationstack);
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+app.listen(process.env.PORT, () => {
+    console.log(`App started listening at http://localhost:${port}`);
 });
 

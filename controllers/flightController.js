@@ -9,8 +9,5 @@ export const getFlight = async (flightNumber) => {
     let response = await axios.get(url);
     console.log(response.data);
     return response.data;
-    
-    
-    
 }
 

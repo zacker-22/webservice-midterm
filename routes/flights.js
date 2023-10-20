@@ -3,7 +3,7 @@ import {getFlight} from '../controllers/flightController.js';
 
 
 const aviationstack = express.Router();
-aviationstack.use(express.json());
+
 aviationstack.post('/', async (req, res) => {
     try{
         const flightNumber = req.body.flightNumber;
