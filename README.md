@@ -10,3 +10,6 @@ Setup <code>.env</code> with AVIATION_API_KEY=API_KEY_HERE
 
 Start the node server using
 <code>node index.js</code>
+
+# Testing
+Deployed on Azure at [https://webservice-zacker.azurewebsites.net/](https://webservice-zacker.azurewebsites.net/)
