@@ -9,4 +9,5 @@ node_modules/
 
 #Ignore Package modules
 ./node_modules/*
-
+./views/
+./public/

@@ -1,0 +1,25 @@
+{   
+    "name": "Webservices Midterm",
+    "version": "0.0.0",
+    "description": "Webservices Midterm Documentation", 
+    "title": "WebSerivce Aviation API",
+    "url" : "https://webservice-zacker.azurewebsites.net",
+    "src" : "./routes",
+    "filename": "./routes/",
+    "header": {
+      "title": "WebSerivce Aviation API",
+      "filename": "README.md"
+    },
+    "template": {
+      "withCompare": false,
+      "withGenerator": false,
+      "aloneDisplay": false
+
+
+    },
+    "order": [
+        "airport",
+        "flight"
+    ]
+    
+  }

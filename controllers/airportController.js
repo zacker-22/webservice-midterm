@@ -1,5 +1,6 @@
 import axios from "axios"
 import dotenv from "dotenv"
+import logger from "../logger/logger.js";
 
 dotenv.config();
 const API_KEY = process.env.AVIATION_API_KEY;
@@ -44,10 +45,11 @@ export const getAirport = async (airportCode) => {
     
     let data = null;
     try{
+        logger.info(`Searching for airport with airportCode ${airportCode}`);
         data = await binary_search_airport(airportCode);
     }
     catch(err){
-        console.log(err);
+        logger.error(err, {airportCode: airportCode});
     }
   
     return data;

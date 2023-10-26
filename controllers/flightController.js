@@ -1,5 +1,6 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
+import logger from '../logger/logger.js';
 dotenv.config();
 
 const API_KEY = process.env.AVIATION_API_KEY;
@@ -30,10 +31,10 @@ export const getFlight = async (flightNumber) => {
     if(response.status == 200){
         try{
             data = reFormatResponse(response.data.data[0]);
-            console.log(data);
+            logger.info(`Flight data for flight ${flightNumber} retrieved successfully`, {flightNumber: flightNumber});
         }
         catch(err){
-            console.log(err);
+            logger.error(err, {flightNumber: flightNumber});
         }
     }
     
